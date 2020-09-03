@@ -1,0 +1,18 @@
+doctype html
+html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
+    //HEAD
+    head
+        block head
+            meta(charset="UTF-8")
+            meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, user-scalable=no")
+            title=title
+            meta(name="description" content=description)
+    body(class=pageClass)
+        block header 
+            header#header
+                include ../partials/_header.pug
+        main#main
+            block content
+        block footer
+            footer#footer
+                include ../partials/_footer.pug
