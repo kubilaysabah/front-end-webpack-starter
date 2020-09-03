@@ -15,11 +15,14 @@ const theme = {
     },
 
     slider : function(element) {
-        $(element).slick();
+        $(element).slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
     },
 
     eventListeners: function () {
-
+        // Listener Functions
     }
 }
 
