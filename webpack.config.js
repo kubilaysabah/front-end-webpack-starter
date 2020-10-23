@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    entry: ['babel-polyfill', './src/assets/js/index.js'],
+    entry: ['babel-polyfill', './src/assets/js/app.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'assets/js/bundle.js'

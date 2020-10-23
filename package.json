@@ -32,9 +32,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "bootstrap": "^5.0.0-alpha1",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
-    "slick-carousel": "^1.8.1"
+    "swiper": "^6.3.4",
+    "tailwindcss": "^1.9.5"
   }
 }
