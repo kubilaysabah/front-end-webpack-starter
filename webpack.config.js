@@ -3,10 +3,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    entry: ['babel-polyfill', './src/assets/js/app.js'],
+    entry: ['babel-polyfill', './src/js/app.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'assets/js/bundle.js'
+        filename: 'js/bundle.js'
     },
     devServer: {
         contentBase:'./dist'
@@ -14,18 +14,14 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin({
             filename:'index.html',
-            template: './src/index.pug'
+            template: './src/index.html'
         }),
         new ExtractTextPlugin({
-            filename: '/assets/css/app.css'
+            filename: '/css/app.css'
         })
     ],
     module: {
         rules: [
-            { 
-                test: /\.pug$/,
-                use: ['pug-loader']
-            },
             { 
                 test: /\.js$/, 
                 exclude: /node_modules/,

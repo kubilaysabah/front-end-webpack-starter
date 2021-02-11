@@ -21,8 +21,6 @@
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.4.1",
     "node-sass": "^4.14.0",
-    "pug": "^3.0.0",
-    "pug-loader": "^2.4.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.0",
     "url-loader": "^4.1.0",
@@ -32,7 +30,8 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "swiper": "^6.3.4",
-    "tailwindcss": "^1.9.5"
+    "bootstrap": "^5.0.0-beta2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
